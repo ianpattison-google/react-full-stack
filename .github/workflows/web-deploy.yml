@@ -6,13 +6,15 @@ on:
 
 defaults:
   run:
-   working-directory: todo
+   working-directory: ./todo
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Install packages
+        run: npm install
       - name: Build the web service
         run: npm run build 
       - name: Deploy the web service
