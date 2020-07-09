@@ -5,7 +5,7 @@ on:
    branches: [ master ]
 
 defaults:
-  working-directory:todo
+  working-directory: todo
 
 jobs:
   deploy:
