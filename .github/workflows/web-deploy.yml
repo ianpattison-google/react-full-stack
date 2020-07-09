@@ -1,11 +1,12 @@
-name: Deploy the web srervice
+name: Deploy the web service
 
 on:
   push:
    branches: [ master ]
 
 defaults:
-  working-directory: todo
+  run:
+   working-directory: todo
 
 jobs:
   deploy:
